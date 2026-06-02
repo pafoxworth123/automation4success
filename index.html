@@ -216,7 +216,7 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM SECTION -->
+  <!-- CONTACT FORM SECTION WITH SMS ALERT -->
   <section id="contact" class="dark-cta">
     <div class="container">
       <h2 style="color: white;">Ready to Stop Losing Money?</h2>
@@ -224,8 +224,11 @@
       
       <form action="https://formsubmit.co/ef87caba2227fa4b5a5d9072fadffb63" method="POST" class="contact-form">
         <input type="hidden" name="_subject" value="New Lead from Automation4Success Website" />
-        <input type="hidden" name="_next" value="https://automation4success.pages.dev/thank-you.html" />
+        <input type="hidden" name="_next" value="https://automation4success.com/thank-you.html" />
         <input type="hidden" name="_captcha" value="false" />
+        
+        <!-- SMS TEXT ALERT - Sends text to 972-850-8399 when form is submitted -->
+        <input type="hidden" name="_sms" value="+19728508399" />
         
         <input type="text" name="full_name" placeholder="Full name" required />
         <input type="email" name="email" placeholder="Email address" required />
