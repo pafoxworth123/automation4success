@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <title>Automation4Success — 24/7 Virtual Receptionist | $197/mo</title>
-  <meta name="description" content="Stop losing customers to missed calls. Virtual receptionist answers 24/7, sets appointments, texts you summaries. $197/mo vs $2,000+ for human." />
-  <meta name="keywords" content="virtual receptionist, automated receptionist, missed calls, small business, 24/7 answering service" />
+  <meta name="description" content="Calculate how much missed calls cost your business. Virtual receptionist answers 24/7, sets appointments, texts you summaries. $197/mo vs $2,000+ for human." />
+  <meta name="keywords" content="virtual receptionist, missed call calculator, automated receptionist, small business" />
   <meta name="author" content="Automation4Success" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Automation4Success — 24/7 Virtual Receptionist" />
-  <meta property="og:description" content="Never miss a customer again. $197/mo answers calls, books appointments, texts you summaries." />
+  <meta property="og:title" content="Automation4Success — See How Much Missed Calls Cost You" />
+  <meta property="og:description" content="Calculate your losses from missed calls. Then see how $197/mo fixes it." />
   <meta property="og:type" content="website" />
 
   <!-- Fonts -->
@@ -24,7 +24,57 @@
   <link rel="stylesheet" href="style.css" />
   
   <style>
-    /* Additional fix for text message screenshot size */
+    /* Calculator styles */
+    .calculator {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    }
+    .calculator label {
+      display: block;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .calculator input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    .calculator .result {
+      background: #f1f5f9;
+      padding: 1rem;
+      border-radius: 16px;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .calculator .result span {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #e11d48;
+    }
+    /* Contact form styles */
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact-form input, .contact-form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      width: 100%;
+    }
+    /* Screenshot fix */
     .screenshot {
       max-width: 320px;
       width: 100%;
@@ -34,12 +84,22 @@
       box-shadow: 0 20px 25px -12px rgba(0,0,0,0.25);
       border: 4px solid white;
     }
+    .screenshot-caption {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #334155;
+    }
+    .screenshot-wrapper {
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO with woman image as BACKGROUND (brighter overlay) -->
+  <!-- HERO with woman image as BACKGROUND -->
   <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/woman-furniture-store.jpg'); background-size: cover; background-position: center 30%;">
     <div class="container" style="text-align: center; color: white;">
       <h1 style="color: white;">Your $2,000/mo human receptionist <span style="color: #f97316;">sleeps at night.</span><br>We answer 24/7 for <span style="font-size: 2rem; color: #f97316;">$197/mo</span>.</h1>
@@ -48,8 +108,8 @@
         <p style="margin:0; font-weight:bold;">🔴 5 missed calls/day × $100 avg job = <span style="color: #f97316;">$2,500/week lost</span></p>
       </div>
       <div class="cta-buttons" style="justify-content: center;">
-        <a href="thank-you.html" class="btn-primary">☎️ Claim My 7-Day Free Trial →</a>
-        <a href="tel:+19728508399" class="btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">Call Us: (972) 850-8399</a>
+        <a href="#calculator" class="btn-primary">📊 Calculate Your Missed Call Cost →</a>
+        <a href="#contact" class="btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">📞 Claim Free Trial</a>
       </div>
     </div>
   </header>
@@ -76,6 +136,34 @@
     </div>
   </section>
 
+  <!-- CALCULATOR SECTION -->
+  <section id="calculator">
+    <div class="container">
+      <h2>📊 How Much Are Missed Calls Costing You?</h2>
+      <div class="calculator">
+        <label>📞 How many calls do you miss per day? (after hours + busy lines)</label>
+        <input type="number" id="missedCalls" value="5" step="1" />
+        
+        <label>💰 Average value per closed job / sale ($)</label>
+        <input type="number" id="jobValue" value="150" step="10" />
+        
+        <label>🎯 Your closing rate on calls that get through (%)</label>
+        <input type="number" id="closeRate" value="40" step="5" />
+        
+        <div class="result">
+          <p style="margin-bottom: 0.5rem;"><strong>You're losing approximately:</strong></p>
+          <span id="monthlyLoss">$0</span>
+          <p style="margin-top: 0.5rem;">per month from missed calls alone</p>
+          <hr style="margin: 1rem 0;">
+          <p><strong>➕ Add $1,800/month saved vs human receptionist</strong><br>
+          <span style="font-size: 1.5rem; color: #f97316;" id="totalSavings">$0</span><br>
+          <strong>Total potential savings per month</strong></p>
+        </div>
+        <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem;">*Based on 22 business days per month</p>
+      </div>
+    </div>
+  </section>
+
   <!-- YOUR IMAGE 2: Empty restaurant tables (FEAR SECTION) -->
   <section>
     <div class="container fear-flex">
@@ -91,14 +179,13 @@
     </div>
   </section>
 
-  <!-- YOUR IMAGE 3: Real text message screenshot (now smaller) -->
-  <!-- YOUR IMAGE 3: Real text message screenshot (now smaller) -->
+  <!-- YOUR IMAGE 3: Real text message screenshot -->
   <section class="bg-light">
     <div class="container text-center">
       <h2>What You Get After Every Call</h2>
-      <div class="screenshot-wrapper" style="text-align: center;">
-        <img src="images/cel_text_messages.jpg" alt="Real text message from Automation4Success showing call summary" class="screenshot" style="max-width: 320px; width: 100%; margin: 0 auto; display: block;" />
-        <p class="screenshot-caption" style="text-align: center; margin-top: 1rem; font-size: 1.4rem; font-weight: 500; color: #334155;">⬆️ This is what YOU get on your phone. Every call. Every time.</p>
+      <div class="screenshot-wrapper">
+        <img src="images/cel_text_messages.jpg" alt="Real text message from Automation4Success showing call summary" class="screenshot" />
+        <p class="screenshot-caption">⬆️ This is what YOU get on your phone. Every call. Every time.</p>
       </div>
     </div>
   </section>
@@ -129,15 +216,109 @@
     </div>
   </section>
 
-   <!-- FINAL PITCH - CLEAN WORKING VERSION -->
-  <section class="dark-cta">
-    <div class="container text-center">
-      <h2 style="color: white; font-size: 2rem; margin-bottom: 0.5rem;">Human: $2,000+/month <span style="color: #f97316;">misses half your calls</span></h2>
-      <p style="color: white; font-size: 1.8rem; font-weight: 700; margin: 1rem 0;">Virtual: <span style="color: #f97316;">$197/month</span> — never sleeps.</p>
-      <div style="margin: 2rem 0;">
-        <a href="thank-you.html" class="btn-orange" style="font-size: 1.2rem; padding: 14px 40px; display: inline-block;">🚀 Start Saving $1,800/Month →</a>
-      </div>
-      <p style="color: #cbd5e1; font-size: 1rem; margin-top: 1rem;">No contract. Cancel anytime. <span style="color: #f97316; font-weight: bold;">First 7 days free.</span></p>
+  <!-- CONTACT FORM SECTION -->
+  <section id="contact" class="dark-cta">
+    <div class="container">
+      <h2 style="color: white;">Ready to Stop Losing Money?</h2>
+      <p style="color: #cbd5e1; margin-bottom: 2rem;">Fill out the form below and we'll set up your 7-day free trial.</p>
+      
+      <form action="https://formsubmit.co/info@automation4success.com" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="New Lead from Automation4Success Website" />
+        <input type="hidden" name="_next" value="https://automation4success.pages.dev/thank-you.html" />
+        <input type="hidden" name="_captcha" value="false" />
+        
+        <input type="text" name="full_name" placeholder="Full name" required />
+        <input type="email" name="email" placeholder="Email address" required />
+        <input type="tel" name="phone" placeholder="Phone number" required />
+        
+        <select name="business_type" required>
+          <option value="">Select your business type</option>
+          <option value="hvac">HVAC / Plumbing</option>
+          <option value="restaurant">Restaurant / Cafe</option>
+          <option value="salon">Salon / Spa / Barbershop</option>
+          <option value="realestate">Real Estate</option>
+          <option value="retail">Retail / Furniture Store</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <input type="hidden" name="calculator_missed_calls" id="calc_missed_calls" />
+        <input type="hidden" name="calculator_monthly_loss" id="calc_monthly_loss" />
+        
+        <button type="submit" class="btn-orange" style="width: 100%;">🚀 Start My 7-Day Free Trial →</button>
+      </form>
+      <p style="color: #94a3b8; font-size: 0.8rem; text-align: center; margin-top: 1rem;">No credit card required. Cancel anytime.</p>
     </div>
   </section>
+
+  <!-- FINAL PITCH -->
+  <section class="dark-cta" style="background: #0f172a; border-top: 1px solid #1e293b;">
+    <div class="container text-center">
+      <h2 class="final-human" style="color: white; font-size: 1.8rem;">Human: $2,000+/month <span style="color: #f97316;">misses half your calls</span></h2>
+      <p class="final-virtual" style="color: white; font-size: 1.5rem; font-weight: 700; margin: 1rem 0;">Virtual: <span style="color: #f97316;">$197/month</span> — never sleeps.</p>
+      <div style="background: #1e293b; padding: 1rem; border-radius: 16px; max-width: 500px; margin: 1rem auto;">
+        <p style="color: #cbd5e1; margin: 0;">💡 You save <strong style="color: #f97316;">$1,800/month</strong> on receptionist costs<br>
+        <strong style="color: #f97316;">PLUS</strong> every missed call you're currently losing<br>
+        ➜ <strong>Total savings could be $3,000–$10,000+/month</strong></p>
+      </div>
+      <div style="margin: 2rem 0;">
+        <a href="#contact" class="btn-orange" style="font-size: 1.2rem; padding: 14px 40px; display: inline-block;">🚀 Start Saving $1,800/Month →</a>
+      </div>
+      <p style="color: #94a3b8; font-size: 1rem;">No contract. Cancel anytime. <span style="color: #f97316; font-weight: bold;">First 7 days free.</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Automation4Success. All rights reserved. | <a href="mailto:info@automation4success.com">info@automation4success.com</a> | (972) 850-8399</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="#contact">Contact</a></p>
+  </footer>
+
+  <script>
+    // Year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Calculator logic
+    const missedCallsInput = document.getElementById('missedCalls');
+    const jobValueInput = document.getElementById('jobValue');
+    const closeRateInput = document.getElementById('closeRate');
+    const monthlyLossSpan = document.getElementById('monthlyLoss');
+    const totalSavingsSpan = document.getElementById('totalSavings');
+    
+    function updateCalculator() {
+      const missedPerDay = parseFloat(missedCallsInput.value) || 0;
+      const jobValue = parseFloat(jobValueInput.value) || 0;
+      const closeRate = parseFloat(closeRateInput.value) || 0;
+      const daysPerMonth = 22;
+      
+      const missedPerMonth = missedPerDay * daysPerMonth;
+      const monthlyLoss = missedPerMonth * jobValue * (closeRate / 100);
+      
+      monthlyLossSpan.textContent = `$${Math.round(monthlyLoss).toLocaleString()}`;
+      
+      const humanReceptionistSavings = 1800;
+      const totalSavings = monthlyLoss + humanReceptionistSavings;
+      totalSavingsSpan.textContent = `$${Math.round(totalSavings).toLocaleString()}`;
+    }
+    
+    missedCallsInput.addEventListener('input', updateCalculator);
+    jobValueInput.addEventListener('input', updateCalculator);
+    closeRateInput.addEventListener('input', updateCalculator);
+    
+    updateCalculator();
+    
+    // Capture calculator values before form submit
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', function() {
+        const missedCalls = document.getElementById('missedCalls').value;
+        const monthlyLossText = document.getElementById('monthlyLoss').innerText;
+        
+        const calcMissedCalls = document.getElementById('calc_missed_calls');
+        const calcMonthlyLoss = document.getElementById('calc_monthly_loss');
+        
+        if (calcMissedCalls) calcMissedCalls.value = missedCalls;
+        if (calcMonthlyLoss) calcMonthlyLoss.value = monthlyLossText;
+      });
+    }
+  </script>
+</body>
 </html>
