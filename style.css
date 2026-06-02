@@ -213,4 +213,63 @@ footer a:hover {
     padding: 10px 20px;
     font-size: 0.875rem;
   }
+}/* FORCED FIX FOR FINAL CTA SECTION - DO NOT REMOVE */
+.dark-cta {
+  background: #0f172a;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.dark-cta h2,
+.dark-cta .final-human {
+  color: white !important;
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.dark-cta p,
+.dark-cta .final-virtual {
+  color: white !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin: 1rem 0 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.dark-cta .final-price {
+  color: #f97316 !important;
+  font-size: 2rem !important;
+}
+
+.dark-cta .btn-orange {
+  background: #f97316 !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+  padding: 14px 40px !important;
+  display: inline-block !important;
+  border-radius: 40px !important;
+  text-decoration: none !important;
+  margin: 1rem 0 !important;
+}
+
+.dark-cta .btn-orange:hover {
+  background: #ea580c !important;
+}
+
+.dark-cta .guarantee {
+  color: #94a3b8 !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  margin-top: 1rem !important;
+}
+
+.dark-cta .guarantee span {
+  color: #f97316 !important;
+  font-weight: bold !important;
 }
