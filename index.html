@@ -22,16 +22,29 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    /* Additional fix for text message screenshot size */
+    .screenshot {
+      max-width: 320px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      border-radius: 32px;
+      box-shadow: 0 20px 25px -12px rgba(0,0,0,0.25);
+      border: 4px solid white;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HERO with woman image as BACKGROUND -->
-  <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('images/woman-furniture-store.jpg'); background-size: cover; background-position: center 30%;">
+  <!-- HERO with woman image as BACKGROUND (brighter overlay) -->
+  <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/woman-furniture-store.jpg'); background-size: cover; background-position: center 30%;">
     <div class="container" style="text-align: center; color: white;">
       <h1 style="color: white;">Your $2,000/mo human receptionist <span style="color: #f97316;">sleeps at night.</span><br>We answer 24/7 for <span style="font-size: 2rem; color: #f97316;">$197/mo</span>.</h1>
       <p class="tagline" style="color: #e2e8f0;"><strong>67% of callers never call back after a missed call.</strong> Here's what you lose every week:</p>
-      <div style="background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); padding: 1rem; border-radius: 12px; max-width: 400px; margin: 0 auto;">
+      <div style="background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); padding: 1rem; border-radius: 12px; max-width: 400px; margin: 0 auto;">
         <p style="margin:0; font-weight:bold;">🔴 5 missed calls/day × $100 avg job = <span style="color: #f97316;">$2,500/week lost</span></p>
       </div>
       <div class="cta-buttons" style="justify-content: center;">
@@ -78,7 +91,7 @@
     </div>
   </section>
 
-  <!-- YOUR IMAGE 3: Real text message screenshot -->
+  <!-- YOUR IMAGE 3: Real text message screenshot (now smaller) -->
   <section class="bg-light">
     <div class="container text-center">
       <h2>What You Get After Every Call</h2>
