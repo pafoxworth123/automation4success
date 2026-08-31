@@ -4,27 +4,77 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <title>Automation4Success — 24/7 Virtual Receptionist | $197/mo</title>
-  <meta name="description" content="Calculate how much missed calls cost your business. Virtual receptionist answers 24/7, sets appointments, texts you summaries. $197/mo vs $2,000+ for human." />
-  <meta name="keywords" content="virtual receptionist, missed call calculator, automated receptionist, small business" />
+  <!-- ✅ High-Intent SEO & Metadata -->
+  <title>Automation4Success — Instant Missed-Call Text-Back for Local Businesses</title>
+  <meta name="description" content="Never lose another high-ticket job to a missed call. Automation4Success texts back callers in under 5 seconds, recovers lost revenue, and books appointments 24/7." />
+  <meta name="keywords" content="missed call text back, speed to lead, sms lead capture, contractor missed calls, automated receptionist, lead recovery" />
   <meta name="author" content="Automation4Success" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://automation4success.com/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Automation4Success — See How Much Missed Calls Cost You" />
-  <meta property="og:description" content="Calculate your losses from missed calls. Then see how $197/mo fixes it." />
+  <!-- ✅ Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTLPJGR4E7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FTLPJGR4E7');
+  </script>
+
+  <!-- ✅ Open Graph / Social Media -->
+  <meta property="og:title" content="Automation4Success — Turn Missed Calls Into Booked Jobs" />
+  <meta property="og:description" content="Catch your callers in under 5 seconds before they dial your competitor." />
+  <meta property="og:image" content="https://automation4success.com/images/og-preview.svg" />
+  <meta property="og:url" content="https://automation4success.com/" />
   <meta property="og:type" content="website" />
 
-  <!-- Fonts -->
+  <!-- ✅ Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   
   <style>
-    /* Calculator styles */
+    /* Interactive SMS Live Demo Card */
+    .demo-box {
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      padding: 1.5rem;
+      border-radius: 16px;
+      max-width: 440px;
+      margin: 1.5rem auto 0 auto;
+      text-align: center;
+    }
+    .demo-input-group {
+      display: flex;
+      gap: 8px;
+      margin-top: 0.75rem;
+    }
+    .demo-input-group input {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #1e293b;
+      color: white;
+      font-size: 0.95rem;
+    }
+    .demo-input-group button {
+      background: #f97316;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .demo-input-group button:hover {
+      background: #ea580c;
+    }
+    
+    /* Calculator Custom Styles */
     .calculator {
       background: white;
       border-radius: 24px;
@@ -38,6 +88,7 @@
       font-weight: 600;
       margin-top: 1rem;
       margin-bottom: 0.5rem;
+      text-align: left;
     }
     .calculator input {
       width: 100%;
@@ -48,17 +99,18 @@
     }
     .calculator .result {
       background: #f1f5f9;
-      padding: 1rem;
+      padding: 1.25rem;
       border-radius: 16px;
       margin-top: 1.5rem;
       text-align: center;
     }
     .calculator .result span {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: #e11d48;
     }
-    /* Contact form styles */
+
+    /* Lead Form Custom Styles */
     .contact-form {
       max-width: 500px;
       margin: 0 auto;
@@ -71,177 +123,277 @@
       border-radius: 12px;
       font-size: 1rem;
     }
-    .contact-form button {
-      width: 100%;
-    }
-    /* Screenshot fix */
+
+    /* Visual Screenshot Wrapper */
     .screenshot {
       max-width: 320px;
       width: 100%;
       margin: 0 auto;
       display: block;
-      border-radius: 32px;
+      border-radius: 28px;
       box-shadow: 0 20px 25px -12px rgba(0,0,0,0.25);
       border: 4px solid white;
     }
     .screenshot-caption {
       text-align: center;
       margin-top: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 500;
       color: #334155;
     }
-    .screenshot-wrapper {
-      text-align: center;
+
+    /* Industry Loss Cards */
+    .loss-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: left;
+    }
+    .loss-card h3 {
+      font-size: 1.15rem;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+    .loss-card .badge {
+      display: inline-block;
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
     }
   </style>
+
+  <!-- Schema.org Application Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Automation4Success",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "197.00",
+      "priceCurrency": "USD"
+    },
+    "url": "https://automation4success.com",
+    "description": "Instant missed-call text-back and lead recovery system for local service businesses.",
+    "creator": {
+      "@type": "Organization",
+      "name": "Automation4Success",
+      "url": "https://automation4success.com",
+      "email": "info@automation4success.com"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- HERO with woman image as BACKGROUND -->
-  <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/woman-furniture-store.jpg'); background-size: cover; background-position: center 30%;">
+  <!-- ===== 1. HERO SECTION ===== -->
+  <header class="hero" style="background-image: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)), url('images/woman-furniture-store.jpg'); background-size: cover; background-position: center 30%;">
     <div class="container" style="text-align: center; color: white;">
-      <h1 style="color: white;">Your $2,000/mo human receptionist <span style="color: #f97316;">sleeps at night.</span><br>We answer 24/7 for <span style="font-size: 2rem; color: #f97316;">$197/mo</span>.</h1>
-      <p class="tagline" style="color: #e2e8f0;"><strong>67% of callers never call back after a missed call.</strong> Here's what you lose every week:</p>
-      <div style="background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); padding: 1rem; border-radius: 12px; max-width: 400px; margin: 0 auto;">
-        <p style="margin:0; font-weight:bold;">🔴 5 missed calls/day × $100 avg job = <span style="color: #f97316;">$2,500/week lost</span></p>
+      <h1 style="color: white; font-size: 2.8rem; line-height: 1.2;">
+        Never Lose Another $500 Job <br><span style="color: #f97316;">to a Missed Call.</span>
+      </h1>
+      <p class="tagline" style="color: #e2e8f0; max-width: 680px; margin: 1rem auto 1.5rem auto; font-size: 1.15rem;">
+        When you're with a customer, driving, or closed for the night, our system texts your caller in <strong>under 5 seconds</strong>—locking in the job before they call the next business on Google.
+      </p>
+
+      <!-- Live SMS Test Card -->
+      <div class="demo-box">
+        <p style="font-size: 0.9rem; font-weight: 600; color: #cbd5e1; margin-bottom: 4px;">⚡ See How Fast It Works On Your Phone</p>
+        <form id="demo-sms-form" class="demo-input-group">
+          <input type="tel" id="demo-phone" placeholder="Enter cell number..." required />
+          <button type="submit" id="demo-btn">Text Me Demo</button>
+        </form>
+        <p id="demo-status" style="font-size: 0.75rem; color: #94a3b8; margin-top: 8px;">Simulates what your customer receives 4 seconds after a missed call.</p>
       </div>
-      <div class="cta-buttons" style="justify-content: center;">
-        <a href="#calculator" class="btn-primary">📊 Calculate Your Missed Call Cost →</a>
-        <a href="#contact" class="btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">📞 Claim Free Trial</a>
+
+      <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+        <a href="#calculator" class="btn-primary" style="background: #f97316; border-color: #f97316;">📊 Calculate Your Lost Revenue →</a>
+        <a href="#contact" class="btn-secondary" style="background: rgba(255,255,255,0.15); color: white; border-color: white;">
+          🚀 Start 7-Day Free Trial
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- COMPARISON TABLE -->
+  <!-- ===== 2. HEAD-TO-HEAD SPEED-TO-LEAD COMPARISON ===== -->
   <section class="bg-light">
     <div class="container">
-      <h2>Human vs Virtual: The Real Cost</h2>
+      <h2>What Happens When You Miss a Call?</h2>
       <div class="table-wrapper">
         <table>
           <thead>
-            <tr><th>Feature</th><th>👤 Human Receptionist</th><th>🤖 Virtual Receptionist</th></tr>
+            <tr>
+              <th>The Scenario</th>
+              <th>❌ Without Missed-Call Recovery</th>
+              <th>✅ With Automation4Success</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><th>Hours</th><td>9-5, Mon-Fri only</td><td class="green-bg">✅ 24/7/365</td></tr>
-            <tr><th>Answers holidays/weekends</th><td>❌ No</td><td class="green-bg">✅ Yes</td></tr>
-            <tr><th>Sets appointments automatically</th><td>⚠️ Manual, error-prone</td><td class="green-bg">✅ Instant</td></tr>
-            <tr><th>Texts you call summary</th><td>❌ Never</td><td class="green-bg">✅ Yes — name + need + phone</td></tr>
-            <tr><th>Monthly cost</th><td>$2,000+ ($500/wk)</td><td class="yellow-bg"><strong>$197 — save $1,800+/mo</strong></td></tr>
-            <tr><th>Missed calls per month</th><td>~40-60 (after hours)</td><td class="green-bg">✅ Zero</td></tr>
+            <tr>
+              <th>Response Time</th>
+              <td>Voicemail (Customer hangs up in 4 seconds)</td>
+              <td class="green-bg"><strong>Sub-5 Second Instant Text</strong></td>
+            </tr>
+            <tr>
+              <th>Caller Behavior</th>
+              <td>Dials the next competitor on Google</td>
+              <td class="green-bg">Replies with job details & address</td>
+            </tr>
+            <tr>
+              <th>After-Hours Coverage</th>
+              <td>Lost entirely until next morning</td>
+              <td class="green-bg">24/7/365 Automated Lead Capture</td>
+            </tr>
+            <tr>
+              <th>Owner Notification</th>
+              <td>You find out hours later (if they left a VM)</td>
+              <td class="green-bg">Instant SMS Summary to your cell</td>
+            </tr>
+            <tr>
+              <th>Cost Structure</th>
+              <td>$2,500+/mo in lost customer revenue</td>
+              <td class="yellow-bg"><strong>Flat $197/mo (Zero Contracts)</strong></td>
+            </tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- CALCULATOR SECTION -->
+  <!-- ===== 3. HOW MUCH YOU'RE LOSING (CALCULATOR) ===== -->
   <section id="calculator">
     <div class="container">
-      <h2>📊 How Much Are Missed Calls Costing You?</h2>
+      <h2>📊 How Much Revenue Are You Bleeding?</h2>
+      <p style="color: #64748b; margin-bottom: 2rem;">Over 67% of callers never call back after reaching voicemail. Put in your numbers below:</p>
+      
       <div class="calculator">
-        <label>📞 How many calls do you miss per day? (after hours + busy lines)</label>
-        <input type="number" id="missedCalls" value="5" step="1" />
+        <label>📞 Estimated missed calls per day (busy lines + after hours)</label>
+        <input type="number" id="missedCalls" value="4" step="1" />
         
-        <label>💰 Average value per closed job / sale ($)</label>
+        <label>💰 Average value per customer / closed job ($)</label>
         <input type="number" id="jobValue" value="150" step="10" />
         
-        <label>🎯 Your closing rate on calls that get through (%)</label>
+        <label>🎯 Your estimated close rate on live leads (%)</label>
         <input type="number" id="closeRate" value="40" step="5" />
         
         <div class="result">
-          <p style="margin-bottom: 0.5rem;"><strong>You're losing approximately:</strong></p>
+          <p style="margin-bottom: 0.5rem; color: #475569;"><strong>You're losing approximately:</strong></p>
           <span id="monthlyLoss">$0</span>
-          <p style="margin-top: 0.5rem;">per month from missed calls alone</p>
-          <hr style="margin: 1rem 0;">
-          <p><strong>➕ Add $1,800/month saved vs human receptionist</strong><br>
-          <span style="font-size: 1.5rem; color: #f97316;" id="totalSavings">$0</span><br>
-          <strong>Total potential savings per month</strong></p>
+          <p style="margin-top: 0.5rem; color: #475569;">per month to faster competitors</p>
+          <hr style="margin: 1rem 0; border: none; border-top: 1px solid #cbd5e1;">
+          <p style="font-size: 0.95rem;"><strong>ROI with Automation4Success:</strong><br>
+          Recovering just <span style="color: #f97316; font-weight: bold;">2 missed jobs a month</span> pays for the entire service.</p>
         </div>
-        <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem;">*Based on 22 business days per month</p>
+        <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem; color: #94a3b8;">*Calculation based on standard 22-day working month.</p>
       </div>
     </div>
   </section>
 
-  <!-- YOUR IMAGE 2: Empty restaurant tables (FEAR SECTION) -->
-  <section>
-    <div class="container fear-flex">
-      <div class="fear-image">
-        <img src="images/empty-restaurant-tables.jpg" alt="Empty restaurant tables - missed calls cost real money" />
-      </div>
-      <div class="fear-text">
-        <h2 class="text-left">⚠️ This reservations-only restaurant lost <span class="highlight-red">47 calls last month</span></h2>
-        <p class="lead">Each missed call = one empty table. Each empty table = lost revenue you never recover.</p>
-        <p>After-hours reservation calls went to voicemail. People hung up and called the next restaurant. By morning, those tables stayed empty.</p>
-        <p><strong>Don't let this be you.</strong></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- YOUR IMAGE 3: Real text message screenshot -->
-  <section class="bg-light">
-    <div class="container text-center">
-      <h2>What You Get After Every Call</h2>
-      <div class="screenshot-wrapper">
-        <img src="images/cel_text_messages.jpg" alt="Real text message from Automation4Success showing call summary" class="screenshot" />
-        <p class="screenshot-caption">⬆️ This is what YOU get on your phone. Every call. Every time.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section>
-    <div class="container">
-      <h2>How It Works — 3 Seconds Flat</h2>
-      <div class="steps">
-        <div class="step-card"><strong>1️⃣ Call comes in</strong><br>We answer before 2nd ring</div>
-        <div class="step-card"><strong>2️⃣ AI learns intent</strong><br>Book, question, or urgent?</div>
-        <div class="step-card"><strong>3️⃣ You get text summary</strong><br>And we send calendar invite</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INDUSTRIES -->
+  <!-- ===== 4. BALANCED REAL-WORLD IMPACT (REPLACED RESTAURANT SECTION) ===== -->
   <section class="bg-light">
     <div class="container">
-      <h2>⚠️ If This Sounds Like You, You're Bleeding Money</h2>
+      <h2>Where Local Businesses Lose The Most Revenue</h2>
       <div class="industry-grid">
-        <div class="card">🔧 <strong>HVAC / Plumbers</strong> — After-hours emergency calls = $500+ jobs lost</div>
-        <div class="card">💇 <strong>Salons / Barbers</strong> — Cancellations and no-shows kill your day</div>
-        <div class="card">🏠 <strong>Realtors</strong> — Showing requests while you're with another client</div>
-        <div class="card">🪑 <strong>Furniture Stores</strong> — Like Sarah, you can't always answer while helping customers</div>
-        <div class="card">🍽️ <strong>Restaurants</strong> — Reservations while you're in the weeds</div>
+        <div class="loss-card">
+          <span class="badge">High Emergency Risk</span>
+          <h3>🔧 HVAC & Plumbers</h3>
+          <p style="color: #475569; font-size: 0.9rem;">When a pipe bursts or an AC fails, the caller never leaves a voicemail. They hire whoever responds first. One saved emergency call recovers $400–$1,200.</p>
+        </div>
+        <div class="loss-card">
+          <span class="badge">Immediate Intent</span>
+          <h3>🚗 Auto & Towing</h3>
+          <p style="color: #475569; font-size: 0.9rem;">Stranded drivers dial down Google Maps until someone confirms availability. An automated text locks them in before they dial the next shop.</p>
+        </div>
+        <div class="loss-card">
+          <span class="badge">High Churn Area</span>
+          <h3>💇‍♀️ Salons & MedSpas</h3>
+          <p style="color: #475569; font-size: 0.9rem;">Calls made during treatments or after 7 PM go unanswered. An instant booking link sent via text recovers appointment revenue automatically.</p>
+        </div>
+        <div class="loss-card">
+          <span class="badge">After-Hours Bleed</span>
+          <h3>🏠 Roofers & Contractors</h3>
+          <p style="color: #475569; font-size: 0.9rem;">Homeowners request estimates late in the evening. Our system collects their project details and address while you sleep.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT FORM SECTION WITH SMS ALERT -->
+  <!-- ===== 5. REAL SMS SCREENSHOT PROOF ===== -->
+  <section>
+    <div class="container" style="text-align: center;">
+      <h2 style="text-align: center;">What You Receive On Your Cell Phone</h2>
+      <p style="color: #64748b; margin-bottom: 2rem; text-align: center; font-size: 1.05rem;">
+        Every time a call is recovered, you get an instant transcript on your device:
+      </p>
+      
+      <div class="screenshot-wrapper" style="text-align: center;">
+        <img src="images/cel_text_messages.jpg" alt="Real SMS transcript summary from Automation4Success" class="screenshot" />
+        
+        <div style="margin: 1.5rem auto 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #fff7ed; border: 1.5px solid #fed7aa; padding: 12px 24px; border-radius: 9999px; box-shadow: 0 4px 12px rgba(249, 115, 22, 0.08); text-align: center;">
+          <span style="font-size: 1.8rem;">📱</span>
+          <p style="font-size: 1.15rem; font-weight: 700; color: #9a3412; margin: 0; line-height: 1.4; text-align: center;">
+            <strong>Name, job request, and contact info</strong> delivered instantly to your pocket.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. HOW IT WORKS ===== -->
+  <section class="bg-light">
+    <div class="container">
+      <h2>How Missed-Call Recovery Works</h2>
+      <div class="steps">
+        <div class="card">
+          <strong>1️⃣ Call Comes In</strong><br>
+          <span style="font-size: 0.9rem; color: #475569;">You're on a job, in a meeting, or asleep. The call goes unanswered.</span>
+        </div>
+        <div class="card">
+          <strong>2️⃣ Instant SMS Dispatched</strong><br>
+          <span style="font-size: 0.9rem; color: #475569;">Within 4 seconds: <em>"Hey, sorry we missed you! How can we help you today?"</em></span>
+        </div>
+        <div class="card">
+          <strong>3️⃣ Lead Locked In</strong><br>
+          <span style="font-size: 0.9rem; color: #475569;">Customer replies with project info. You receive an instant alert on your phone.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. LEAD CAPTURE FORM ===== -->
   <section id="contact" class="dark-cta">
     <div class="container">
-      <h2 style="color: white;">Ready to Stop Losing Money?</h2>
-      <p style="color: #cbd5e1; margin-bottom: 2rem;">Fill out the form below and we'll set up your 7-day free trial.</p>
+      <h2 style="color: white;">Ready to Stop Losing Money to Competitors?</h2>
+      <p style="color: #cbd5e1; margin-bottom: 2rem;">Set up your 7-day risk-free trial in under 2 minutes. No credit card required.</p>
       
       <form action="https://formsubmit.co/ef87caba2227fa4b5a5d9072fadffb63" method="POST" class="contact-form">
-        <input type="hidden" name="_subject" value="New Lead from Automation4Success Website" />
+        <input type="hidden" name="_subject" value="New Trial Request from Automation4Success" />
         <input type="hidden" name="_next" value="https://automation4success.com/thank-you.html" />
         <input type="hidden" name="_captcha" value="false" />
         
-        <!-- SMS TEXT ALERT - Sends text to 972-850-8399 when form is submitted -->
-        <input type="hidden" name="_sms" value="+19728508399" />
+        <!-- Dynamically injected SMS alert number to prevent scraping -->
+        <input type="hidden" name="_sms" id="form_sms_target" value="" />
         
-        <input type="text" name="full_name" placeholder="Full name" required />
-        <input type="email" name="email" placeholder="Email address" required />
-        <input type="tel" name="phone" placeholder="Phone number" required />
+        <input type="text" name="full_name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Business Email Address" required />
+        <input type="tel" name="phone" placeholder="Cell Phone Number (For Trial Setup)" required />
         
         <select name="business_type" required>
           <option value="">Select your business type</option>
-          <option value="hvac">HVAC / Plumbing</option>
-          <option value="restaurant">Restaurant / Cafe</option>
-          <option value="salon">Salon / Spa / Barbershop</option>
-          <option value="realestate">Real Estate</option>
-          <option value="retail">Retail / Furniture Store</option>
-          <option value="other">Other</option>
+          <option value="hvac_plumbing">HVAC / Plumbing / Electrical</option>
+          <option value="contractor_roofing">Roofing / General Contractor</option>
+          <option value="auto_towing">Auto Repair / Towing</option>
+          <option value="salon_medspa">Salon / Spa / Wellness</option>
+          <option value="restaurant">Restaurant / Hospitality</option>
+          <option value="other">Other Local Service</option>
         </select>
         
         <input type="hidden" name="calculator_missed_calls" id="calc_missed_calls" />
@@ -249,79 +401,141 @@
         
         <button type="submit" class="btn-orange" style="width: 100%;">🚀 Start My 7-Day Free Trial →</button>
       </form>
-      <p style="color: #94a3b8; font-size: 0.8rem; text-align: center; margin-top: 1rem;">No credit card required. Cancel anytime.</p>
+      <p style="color: #94a3b8; font-size: 0.85rem; text-align: center; margin-top: 1rem;">Setup takes under 15 minutes. Cancel anytime with zero fees.</p>
     </div>
   </section>
 
-  <!-- FINAL PITCH -->
-  <section class="dark-cta" style="background: #0f172a; border-top: 1px solid #1e293b;">
-    <div class="container text-center">
-      <h2 class="final-human" style="color: white; font-size: 1.8rem;">Human: $2,000+/month <span style="color: #f97316;">misses half your calls</span></h2>
-      <p class="final-virtual" style="color: white; font-size: 1.5rem; font-weight: 700; margin: 1rem 0;">Virtual: <span style="color: #f97316;">$197/month</span> — never sleeps.</p>
-      <div style="background: #1e293b; padding: 1rem; border-radius: 16px; max-width: 500px; margin: 1rem auto;">
-        <p style="color: #cbd5e1; margin: 0;">💡 You save <strong style="color: #f97316;">$1,800/month</strong> on receptionist costs<br>
-        <strong style="color: #f97316;">PLUS</strong> every missed call you're currently losing<br>
-        ➜ <strong>Total savings could be $3,000–$10,000+/month</strong></p>
-      </div>
-      <div style="margin: 2rem 0;">
-        <a href="#contact" class="btn-orange" style="font-size: 1.2rem; padding: 14px 40px; display: inline-block;">🚀 Start Saving $1,800/Month →</a>
-      </div>
-      <p style="color: #94a3b8; font-size: 1rem;">No contract. Cancel anytime. <span style="color: #f97316; font-weight: bold;">First 7 days free.</span></p>
+  <!-- ===== 8. A2P 10DLC COMPLIANT SMS PRIVACY POLICY ===== -->
+  <section id="privacy" style="background: #f8fafc; border-top: 1px solid #e2e8f0; font-size: 0.85rem; color: #64748b; padding: 2.5rem 1rem;">
+    <div class="container" style="max-width: 800px; text-align: left;">
+      <h3 style="color: #0f172a; font-size: 1.1rem; margin-bottom: 0.8rem; text-align: center;">Privacy Policy & SMS Terms</h3>
+      <p style="margin-bottom: 0.75rem;">
+        <strong>1. SMS Consent & Customer Communications:</strong> By submitting your details or calling/texting our line, you agree to receive automated notifications, missed-call follow-ups, and customer support messages from Automation4Success. Message and data rates may apply. Frequency varies based on your requests.
+      </p>
+      <p style="margin-bottom: 0.75rem;">
+        <strong>2. Opt-Out & Assistance:</strong> You can unsubscribe or stop receiving text messages at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong> or contact <a href="mailto:info@automation4success.com" style="color: #e11d48;">info@automation4success.com</a>.
+      </p>
+      <p style="margin-bottom: 0;">
+        <strong>3. Strict Data Protection:</strong> No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with or sold to any third parties.
+      </p>
     </div>
   </section>
 
+  <!-- ===== 9. FOOTER ===== -->
   <footer>
-    <p>© <span id="year"></span> Automation4Success. All rights reserved. | <a href="mailto:info@automation4success.com">info@automation4success.com</a> | (972) 850-8399</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="#contact">Contact</a></p>
+    <div class="container">
+      <p>© <span id="year"></span> Automation4Success. All rights reserved. | <a href="mailto:info@automation4success.com">info@automation4success.com</a> | 
+        <a href="#" id="footer-call-btn"><span id="footer-phone"></span></a>
+      </p>
+      <p style="margin-top: 0.5rem;"><a href="#privacy">Privacy Policy & SMS Terms</a> | <a href="#contact">Start Trial</a></p>
+    </div>
   </footer>
 
+  <!-- ===== SCRIPTS: CALCULATOR, ANTI-SCRAPING, & ANALYTICS ===== -->
   <script>
-    // Year for footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Calculator logic
-    const missedCallsInput = document.getElementById('missedCalls');
-    const jobValueInput = document.getElementById('jobValue');
-    const closeRateInput = document.getElementById('closeRate');
-    const monthlyLossSpan = document.getElementById('monthlyLoss');
-    const totalSavingsSpan = document.getElementById('totalSavings');
-    
-    function updateCalculator() {
-      const missedPerDay = parseFloat(missedCallsInput.value) || 0;
-      const jobValue = parseFloat(jobValueInput.value) || 0;
-      const closeRate = parseFloat(closeRateInput.value) || 0;
-      const daysPerMonth = 22;
+    document.addEventListener('DOMContentLoaded', function() {
+      // 1. Dynamic Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // 2. Anti-Scraping Phone Decoding (Base64)
+      // KDk3MikgODUwLTgzOTk= -> (972) 850-8399
+      // MTk3Mjg1MDgzOTk=     -> 19728508399
+      var phoneDisplay = atob('KDk3MikgODUwLTgzOTk=');
+      var phoneLink    = 'tel:+' + atob('MTk3Mjg1MDgzOTk=');
+      var fullE164     = '+' + atob('MTk3Mjg1MDgzOTk=');
+
+      // Inject into Footer
+      var footerPhone = document.getElementById('footer-phone');
+      var footerBtn   = document.getElementById('footer-call-btn');
+      if (footerPhone && footerBtn) {
+        footerPhone.textContent = phoneDisplay;
+        footerBtn.href = phoneLink;
+      }
+
+      // Inject into FormSubmit SMS alert
+      var smsTarget = document.getElementById('form_sms_target');
+      if (smsTarget) {
+        smsTarget.value = fullE164;
+      }
+
+      // 3. Conversion Tracking
+      var trackCall = function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'click_to_call', {
+            'event_category': 'Engagement',
+            'event_label': 'Phone Call Footer'
+          });
+        }
+      };
+      if (footerBtn) footerBtn.addEventListener('click', trackCall);
+
+      // 4. Live SMS Demo Simulation Handler
+      var demoForm = document.getElementById('demo-sms-form');
+      var demoStatus = document.getElementById('demo-status');
+      var demoBtn = document.getElementById('demo-btn');
+      if (demoForm) {
+        demoForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          demoBtn.disabled = true;
+          demoBtn.textContent = 'Sending...';
+          demoStatus.style.color = '#38bdf8';
+          demoStatus.textContent = 'Simulating instant text response...';
+
+          setTimeout(function() {
+            demoBtn.textContent = 'Sent! ✅';
+            demoStatus.style.color = '#4ade80';
+            demoStatus.textContent = 'In production, your customer receives an automated text in under 4 seconds!';
+          }, 1200);
+        });
+      }
+
+      // 5. Calculator Logic
+      const missedCallsInput = document.getElementById('missedCalls');
+      const jobValueInput = document.getElementById('jobValue');
+      const closeRateInput = document.getElementById('closeRate');
+      const monthlyLossSpan = document.getElementById('monthlyLoss');
       
-      const missedPerMonth = missedPerDay * daysPerMonth;
-      const monthlyLoss = missedPerMonth * jobValue * (closeRate / 100);
-      
-      monthlyLossSpan.textContent = `$${Math.round(monthlyLoss).toLocaleString()}`;
-      
-      const humanReceptionistSavings = 1800;
-      const totalSavings = monthlyLoss + humanReceptionistSavings;
-      totalSavingsSpan.textContent = `$${Math.round(totalSavings).toLocaleString()}`;
-    }
-    
-    missedCallsInput.addEventListener('input', updateCalculator);
-    jobValueInput.addEventListener('input', updateCalculator);
-    closeRateInput.addEventListener('input', updateCalculator);
-    
-    updateCalculator();
-    
-    // Capture calculator values before form submit
-    const form = document.querySelector('form');
-    if (form) {
-      form.addEventListener('submit', function() {
-        const missedCalls = document.getElementById('missedCalls').value;
-        const monthlyLossText = document.getElementById('monthlyLoss').innerText;
+      function updateCalculator() {
+        const missedPerDay = parseFloat(missedCallsInput.value) || 0;
+        const jobValue = parseFloat(jobValueInput.value) || 0;
+        const closeRate = parseFloat(closeRateInput.value) || 0;
+        const daysPerMonth = 22;
         
-        const calcMissedCalls = document.getElementById('calc_missed_calls');
-        const calcMonthlyLoss = document.getElementById('calc_monthly_loss');
+        const missedPerMonth = missedPerDay * daysPerMonth;
+        const monthlyLoss = missedPerMonth * jobValue * (closeRate / 100);
         
-        if (calcMissedCalls) calcMissedCalls.value = missedCalls;
-        if (calcMonthlyLoss) calcMonthlyLoss.value = monthlyLossText;
-      });
-    }
+        monthlyLossSpan.textContent = `$${Math.round(monthlyLoss).toLocaleString()}`;
+      }
+      
+      if (missedCallsInput && jobValueInput && closeRateInput) {
+        missedCallsInput.addEventListener('input', updateCalculator);
+        jobValueInput.addEventListener('input', updateCalculator);
+        closeRateInput.addEventListener('input', updateCalculator);
+        updateCalculator();
+      }
+      
+      // 6. Pass Calculator Values into Lead Capture Form
+      const form = document.querySelector('.contact-form');
+      if (form) {
+        form.addEventListener('submit', function() {
+          const missedCalls = document.getElementById('missedCalls').value;
+          const monthlyLossText = document.getElementById('monthlyLoss').innerText;
+          
+          const calcMissedCalls = document.getElementById('calc_missed_calls');
+          const calcMonthlyLoss = document.getElementById('calc_monthly_loss');
+          
+          if (calcMissedCalls) calcMissedCalls.value = missedCalls;
+          if (calcMonthlyLoss) calcMonthlyLoss.value = monthlyLossText;
+
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              'event_category': 'Form',
+              'event_label': 'Trial Registration'
+            });
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://automation4success.com/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <image:image>
+      <image:loc>https://automation4success.com/favicon.svg</image:loc>
+      <image:title>Automation4Success Logo</image:title>
+      <image:caption>Instant missed-call text-back service logo</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://automation4success.com/images/storefront.svg</image:loc>
+      <image:title>Small Business Speed-to-Lead System</image:title>
+      <image:caption>Automated missed-call lead capture illustration</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://automation4success.com/images/og-preview.svg</image:loc>
+      <image:title>Automation4Success Social Preview</image:title>
+      <image:caption>Never lose another customer to a missed call</image:caption>
+    </image:image>
+  </url>
+  
+</urlset>

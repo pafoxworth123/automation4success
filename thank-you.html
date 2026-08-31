@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Thank You — Automation4Success</title>
+  <meta name="description" content="Thank you for signing up for your 7-day free trial with Automation4Success." />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- ✅ Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTLPJGR4E7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FTLPJGR4E7');
+
+    // Fire conversion event on page load
+    gtag('event', 'conversion', {
+      'send_to': 'G-FTLPJGR4E7',
+      'event_category': 'Lead',
+      'event_label': 'Form Submission Success'
+    });
+  </script>
+
+  <!-- ✅ Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .thank-you-box {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      max-width: 600px;
+      margin: 3rem auto;
+      text-align: center;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    }
+    .check-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .next-steps {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: left;
+      margin: 2rem 0;
+    }
+    .next-steps ol {
+      padding-left: 1.25rem;
+    }
+    .next-steps li {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero" style="padding: 4rem 1rem 3rem 1rem; background: #0f172a; color: white;">
+    <div class="container">
+      <h1 style="color: white; font-size: 2.5rem;">You're All Set! 🚀</h1>
+      <p class="tagline" style="color: #94a3b8;">We received your trial request and are setting up your account.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="thank-you-box">
+      <span class="check-icon">✅</span>
+      <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #0f172a;">Your 7-Day Free Trial Is Being Configured</h2>
+      <p style="color: #64748b;">No credit card required. We'll have your missed-call recovery line active shortly.</p>
+
+      <div class="next-steps">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: #0f172a;">What happens next:</h3>
+        <ol>
+          <li><strong>Instant Confirmation:</strong> Check your inbox for your setup confirmation email.</li>
+          <li><strong>Demo Call / Text:</strong> We will send a test missed-call text directly to the phone number you provided so you can see the sub-5-second speed.</li>
+          <li><strong>Fast Activation:</strong> If you have any specific booking links or custom messages you want loaded, reply directly to the email.</li>
+        </ol>
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <a href="index.html" class="btn-primary" style="background: #0f172a; text-decoration: none; padding: 12px 28px; border-radius: 40px; color: white; font-weight: 600;">← Return to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Automation4Success. All rights reserved. | <a href="mailto:info@automation4success.com">info@automation4success.com</a> | 
+        <a href="#" id="footer-call-btn"><span id="footer-phone"></span></a>
+      </p>
+      <p style="margin-top: 0.5rem;"><a href="index.html#privacy">Privacy Policy & SMS Terms</a></p>
+    </div>
+  </footer>
+
+  <!-- Dynamic Year & Base64 Phone Decoding -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      var phoneDisplay = atob('KDk3MikgODUwLTgzOTk=');
+      var phoneLink    = 'tel:+' + atob('MTk3Mjg1MDgzOTk=');
+
+      var footerPhone = document.getElementById('footer-phone');
+      var footerBtn   = document.getElementById('footer-call-btn');
+      if (footerPhone && footerBtn) {
+        footerPhone.textContent = phoneDisplay;
+        footerBtn.href = phoneLink;
+      }
+    });
+  </script>
+
+</body>
+</html>
