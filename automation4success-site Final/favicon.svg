@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="36" fill="#ffffff"/>
+  <defs>
+    <linearGradient id="fg" x1="0" x2="1">
+      <stop offset="0" stop-color="#1f7bf2"/>
+      <stop offset="1" stop-color="#0b6efd"/>
+    </linearGradient>
+  </defs>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="108" font-weight="800" fill="url(#fg)">A4S</text>
+</svg>

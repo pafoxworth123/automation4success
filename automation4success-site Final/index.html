@@ -63,17 +63,13 @@
       max-width: 500px;
       margin: 0 auto;
     }
-    .contact-form input, .contact-form select, .contact-form textarea {
+    .contact-form input, .contact-form select {
       width: 100%;
       padding: 12px;
       margin-bottom: 1rem;
       border: 1px solid #cbd5e1;
       border-radius: 12px;
       font-size: 1rem;
-      font-family: inherit;
-    }
-    .contact-form textarea {
-      resize: vertical;
     }
     .contact-form button {
       width: 100%;
@@ -98,70 +94,6 @@
     .screenshot-wrapper {
       text-align: center;
     }
-    /* NEW: mid-page call-to-action */
-    .mid-cta {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
-      border-top: 4px solid #f97316;
-      border-bottom: 4px solid #f97316;
-    }
-    .mid-cta h3 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-      color: white;
-    }
-    .mid-cta p {
-      color: #cbd5e1;
-      margin-bottom: 1.5rem;
-      font-size: 1.05rem;
-    }
-    .mid-cta-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .mid-cta .btn-call {
-      background: #f97316;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 1.05rem;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: transform 0.15s, background 0.15s;
-    }
-    .mid-cta .btn-call:hover {
-      background: #ea580c;
-      transform: translateY(-2px);
-    }
-    .mid-cta .btn-wa {
-      background: #25D366;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 1.05rem;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: transform 0.15s, background 0.15s;
-    }
-    .mid-cta .btn-wa:hover {
-      background: #1da851;
-      transform: translateY(-2px);
-    }
-    .mid-cta .small-note {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      margin-top: 1rem;
-    }
   </style>
 </head>
 
@@ -171,14 +103,13 @@
   <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/woman-furniture-store.jpg'); background-size: cover; background-position: center 30%;">
     <div class="container" style="text-align: center; color: white;">
       <h1 style="color: white;">Your $2,000/mo human receptionist <span style="color: #f97316;">sleeps at night.</span><br>We answer 24/7 for <span style="font-size: 2rem; color: #f97316;">$197/mo</span>.</h1>
-      <p style="display:inline-block; background:#f97316; color:#0f172a; font-weight:700; padding:6px 16px; border-radius:999px; font-size:0.85rem; margin-bottom:1rem;">🔥 Now onboarding a limited number of founding clients</p>
       <p class="tagline" style="color: #e2e8f0;"><strong>67% of callers never call back after a missed call.</strong> Here's what you lose every week:</p>
       <div style="background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); padding: 1rem; border-radius: 12px; max-width: 400px; margin: 0 auto;">
         <p style="margin:0; font-weight:bold;">🔴 5 missed calls/day × $100 avg job = <span style="color: #f97316;">$2,500/week lost</span></p>
       </div>
       <div class="cta-buttons" style="justify-content: center;">
         <a href="#calculator" class="btn-primary">📊 Calculate Your Missed Call Cost →</a>
-        <a href="#contact" class="btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">📞 Book a Free Demo Call</a>
+        <a href="#contact" class="btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">📞 Claim Free Trial</a>
       </div>
     </div>
   </header>
@@ -202,26 +133,6 @@
           </tbody>
         </table>
       </div>
-    </div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- NEW: MID-PAGE CALL-TO-ACTION (≈1/3 down the page)            -->
-  <!-- Phone number is Base64-obfuscated — populated by JS below.   -->
-  <!-- ============================================================ -->
-  <section class="mid-cta">
-    <div class="container">
-      <h3>🚀 Ready to Stop Losing $2,500+/Week?</h3>
-      <p>Talk to a real person right now — no forms, no waiting.</p>
-      <div class="mid-cta-buttons">
-        <a href="#" id="cta-call" class="btn-call">
-          📞 Call <span id="cta-phone-display"></span>
-        </a>
-        <a href="#" id="cta-whatsapp" class="btn-wa" target="_blank" rel="noopener">
-          💬 WhatsApp Us
-        </a>
-      </div>
-      <p class="small-note">Free demo call · No commitment · Currently onboarding founding clients</p>
     </div>
   </section>
 
@@ -305,20 +216,11 @@
     </div>
   </section>
 
-  <!-- SOFT SECONDARY CTA -->
-  <section class="bg-light">
-    <div class="container text-center">
-      <h3>Not ready to commit yet?</h3>
-      <p style="color:#334155; max-width:500px; margin:0.5rem auto 1.5rem;">Just text us your number and we'll show you exactly how it works — no form, no pressure.</p>
-      <a href="#" id="cta-whatsapp-soft" class="btn-secondary">💬 Text Us Instead</a>
-    </div>
-  </section>
-
   <!-- CONTACT FORM SECTION WITH SMS ALERT -->
   <section id="contact" class="dark-cta">
     <div class="container">
       <h2 style="color: white;">Ready to Stop Losing Money?</h2>
-      <p style="color: #cbd5e1; margin-bottom: 2rem;">Fill out the form below and we'll set up a free demo call to walk through your options.</p>
+      <p style="color: #cbd5e1; margin-bottom: 2rem;">Fill out the form below and we'll set up your 7-day free trial.</p>
       
       <form action="https://formsubmit.co/ef87caba2227fa4b5a5d9072fadffb63" method="POST" class="contact-form">
         <input type="hidden" name="_subject" value="New Lead from Automation4Success Website" />
@@ -329,7 +231,6 @@
         <input type="hidden" name="_sms" value="+19728508399" />
         
         <input type="text" name="full_name" placeholder="Full name" required />
-        <input type="text" name="business_name" placeholder="Business name" />
         <input type="email" name="email" placeholder="Email address" required />
         <input type="tel" name="phone" placeholder="Phone number" required />
         
@@ -342,31 +243,13 @@
           <option value="retail">Retail / Furniture Store</option>
           <option value="other">Other</option>
         </select>
-
-        <select name="interested_in" required>
-          <option value="">What are you interested in?</option>
-          <option value="text_back_only">Missed-call text-back only</option>
-          <option value="full_receptionist">Full 24/7 AI virtual receptionist</option>
-          <option value="not_sure">Not sure — want a recommendation</option>
-          <option value="other">Something else</option>
-        </select>
-
-        <select name="best_time">
-          <option value="">Best time to reach you? (optional)</option>
-          <option value="morning">Morning</option>
-          <option value="afternoon">Afternoon</option>
-          <option value="evening">Evening</option>
-          <option value="anytime">Anytime</option>
-        </select>
-
-        <textarea name="pain_point" placeholder="What's your biggest pain point? (optional — e.g. after-hours calls, too busy to answer, no-shows)" rows="3"></textarea>
         
         <input type="hidden" name="calculator_missed_calls" id="calc_missed_calls" />
         <input type="hidden" name="calculator_monthly_loss" id="calc_monthly_loss" />
         
-        <button type="submit" class="btn-orange" style="width: 100%;">🚀 Book My Free Demo Call →</button>
+        <button type="submit" class="btn-orange" style="width: 100%;">🚀 Start My 7-Day Free Trial →</button>
       </form>
-      <p style="color: #94a3b8; font-size: 0.8rem; text-align: center; margin-top: 1rem;">No commitment. We'll recommend the right plan for your business.</p>
+      <p style="color: #94a3b8; font-size: 0.8rem; text-align: center; margin-top: 1rem;">No credit card required. Cancel anytime.</p>
     </div>
   </section>
 
@@ -383,50 +266,19 @@
       <div style="margin: 2rem 0;">
         <a href="#contact" class="btn-orange" style="font-size: 1.2rem; padding: 14px 40px; display: inline-block;">🚀 Start Saving $1,800/Month →</a>
       </div>
-      <p style="color: #94a3b8; font-size: 1rem;">No contract required. <span style="color: #f97316; font-weight: bold;">Book a free demo call to see it in action.</span></p>
+      <p style="color: #94a3b8; font-size: 1rem;">No contract. Cancel anytime. <span style="color: #f97316; font-weight: bold;">First 7 days free.</span></p>
     </div>
   </section>
 
   <footer>
-    <p>© <span id="year"></span> Automation4Success. All rights reserved. | <a href="mailto:info@automation4success.com">info@automation4success.com</a> | <a href="#" id="footer-call"><span id="footer-phone"></span></a></p>
+    <p>© <span id="year"></span> Automation4Success. All rights reserved. | <a href="mailto:info@automation4success.com">info@automation4success.com</a> | (972) 850-8399</p>
     <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="#contact">Contact</a></p>
   </footer>
 
   <script>
     // Year for footer
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // ============================================================
-    // BASE64 PHONE OBFUSCATION
-    // Decodes "(469) 556-3648" and "14695563648" at page load
-    // and injects them into every phone element by id.
-    // ============================================================
-    document.addEventListener('DOMContentLoaded', function() {
-      var phone  = atob('KDQ2OSkgNTU2LTM2NDg='); // "(469) 556-3648"
-      var digits = atob('MTQ2OTU1NjM2NDg=');      // "14695563648"
-
-      var phoneLink    = 'tel:+' + digits;
-      var whatsappLink = 'https://wa.me/' + digits;
-
-      // Phone text spans
-      ['cta-phone-display', 'footer-phone'].forEach(function(id) {
-        var el = document.getElementById(id);
-        if (el) { el.textContent = phone; }
-      });
-
-      // Click-to-call links
-      ['cta-call', 'footer-call'].forEach(function(id) {
-        var el = document.getElementById(id);
-        if (el) { el.href = phoneLink; }
-      });
-
-      // WhatsApp links
-      ['cta-whatsapp', 'cta-whatsapp-soft'].forEach(function(id) {
-        var el = document.getElementById(id);
-        if (el) { el.href = whatsappLink; }
-      });
-    });
-
+    
     // Calculator logic
     const missedCallsInput = document.getElementById('missedCalls');
     const jobValueInput = document.getElementById('jobValue');
