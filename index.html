@@ -162,6 +162,34 @@
       color: #94a3b8;
       margin-top: 1rem;
     }
+    /* Fear section image sizing (previously unstyled/oversized) */
+    .fear-flex {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .fear-image {
+      flex: 1 1 320px;
+      min-width: 280px;
+    }
+    .fear-image img {
+      width: 100%;
+      max-height: 340px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15);
+      display: block;
+    }
+    .fear-text {
+      flex: 1 1 320px;
+      min-width: 280px;
+    }
+    @media (max-width: 768px) {
+      .fear-image img {
+        max-height: 220px;
+      }
+    }
   </style>
 </head>
 
@@ -324,6 +352,10 @@
         <input type="hidden" name="_subject" value="New Lead from Automation4Success Website" />
         <input type="hidden" name="_next" value="https://automation4success.com/thank-you.html" />
         <input type="hidden" name="_captcha" value="false" />
+        
+        <!-- HONEYPOT: FormSubmit auto-discards any submission where this field has a value.
+             Real visitors never see it; spam bots fill in every field they find, including this one. -->
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
         
         <!-- SMS TEXT ALERT - Sends text to 972-850-8399 when form is submitted -->
         <input type="hidden" name="_sms" value="+19728508399" />
